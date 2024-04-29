@@ -1,0 +1,14 @@
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\bin\Debug\net8.0\HyperGraphExportedCurvesProcessor.exe
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\bin\Debug\net8.0\HyperGraphExportedCurvesProcessor.deps.json
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\bin\Debug\net8.0\HyperGraphExportedCurvesProcessor.runtimeconfig.json
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\bin\Debug\net8.0\HyperGraphExportedCurvesProcessor.dll
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\bin\Debug\net8.0\HyperGraphExportedCurvesProcessor.pdb
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.AssemblyInfoInputs.cache
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.AssemblyInfo.cs
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.csproj.CoreCompileInputs.cache
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.dll
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\refint\HyperGraphExportedCurvesProcessor.dll
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.pdb
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.genruntimeconfig.cache
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\ref\HyperGraphExportedCurvesProcessor.dll
