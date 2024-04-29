@@ -12,8 +12,8 @@ namespace HyperGraphExportedCurvesProcessor
 {
     public class Program
     {
-        static string inputFile = @"29.04_accelTest.csv";
-        static string outPutFile = @"29.04_accelMagnitudesOut.csv";
+        static string inputFile = @"29.04_AccelOverCattleGrids_Rear.csv";
+        static string outPutFile = @"29.04_accelMagnitudesOut1111111111.csv";
 
         static string inputFolder = @"Input\";
         static string outputFolder = @"Output\";
@@ -33,11 +33,13 @@ namespace HyperGraphExportedCurvesProcessor
 
             // // read
             int curveCount = 0;
-            float[][] timeAndMax=new float[40][];
+            float[][] timeAndMax=new float[200][];
+            int[] maxPosArr = new int[200];
             {
                 int j = 0;
                 while (j < allText.Length)
                 {
+                    bool MAG = false;
                     float max = 0;
                     int maxPos = 0;
                     float maxTime = 0;
@@ -54,17 +56,33 @@ namespace HyperGraphExportedCurvesProcessor
                             isNegative = 1;
                             Console.WriteLine("E");
                         }*/
-                        if (StringUtils.expNotationToFloat(expText) > max && time > 0.5f)
+                        if (StringUtils.expNotationToFloat(expText) > max && time > 0.1f && curveCount%4==0) // if MAG curve
                         {
                             max = StringUtils.expNotationToFloat(expText);
                             maxPos = i;
                             maxTime = time;
                         }
+                        if (curveCount % 4 == 0)
+                        {
+                            MAG = true;
+                        }
 
                         i++;
                         k++;
                     }
-                    timeAndMax[curveCount] =new float[]{maxTime,max};
+                    // if not MAG curve
+                    if (!MAG)
+                    {
+                        maxPos = maxPosArr[curveCount-1];
+                        timeAndMax[curveCount] = new float[2];
+                        timeAndMax[curveCount][0] =timeAndMax[curveCount-1][0];
+                        timeAndMax[curveCount][1] = StringUtils.expNotationToFloat(StringUtils.getInterval(allText[maxPos + j], 18, allText[maxPos + j].Length));
+                    }
+                    else
+                    {
+                        timeAndMax[curveCount] = new float[] { maxTime, max };
+                    }
+                    maxPosArr[curveCount] = maxPos;
                     Console.WriteLine("max, maxPos, maxVal | i: " + max + ", " + maxPos + ", " + allText[maxPos] + " | " + i);
                     j = k + 1;
                     curveCount++;
@@ -75,10 +93,11 @@ namespace HyperGraphExportedCurvesProcessor
                 string outPutFilePath = rootPath + outputFolder + outPutFile;
                 File.Copy(rootPath + templateFile, outPutFilePath);
 
-                for (int i =1; i < curveCount+1; i++)
+                for (int i =0; i <curveCount; i+=4)
                 {
-                    File.AppendAllLines(outPutFilePath,new string[] {""});
-                    File.AppendAllLines(outPutFilePath,new string[] { "RR" + i + "," + timeAndMax[i][0]+","+ timeAndMax[i][1] });
+                    File.AppendAllLines(outPutFilePath, new string[] { "RR" +(i/4+1)+"," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
+                        timeAndMax[i + 1][1]+","+timeAndMax[i +2][1]+","+timeAndMax[i +3][1] });
+
                 }
             }
         }

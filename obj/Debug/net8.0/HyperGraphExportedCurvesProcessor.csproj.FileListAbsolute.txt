@@ -12,3 +12,4 @@ C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExpo
 C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.pdb
 C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.genruntimeconfig.cache
 C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\ref\HyperGraphExportedCurvesProcessor.dll
+C:\Users\phili\Documents\Things\TUFast\Altair Projects\Auxilliary\HyperGraphExportedCurvesProcessor\obj\Debug\net8.0\HyperGraphExportedCurvesProcessor.sourcelink.json
