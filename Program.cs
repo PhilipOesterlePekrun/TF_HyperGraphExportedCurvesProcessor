@@ -12,8 +12,8 @@ namespace HyperGraphExportedCurvesProcessor
 {
     public class Program
     {
-        static string inputFile = @"29.04_AccelOverCattleGrids_Rear.csv";
-        static string outPutFile = @"29.04_accelMagnitudesOut1111111111.csv";
+        static string inputFile = @"30.04_braking2_cattleGrids_velocity36_acce-4_start0_print.0001_rearOnly.csv";
+        static string outputFile = @"30.04_braking2_cattleGrids_velocity36_acce-4_start0_print.0001_rearOnly.csv";
 
         static string inputFolder = @"Input\";
         static string outputFolder = @"Output\";
@@ -40,6 +40,10 @@ namespace HyperGraphExportedCurvesProcessor
                 while (j < allText.Length)
                 {
                     bool MAG = false;
+                    if (curveCount % 4 == 0)
+                    {
+                        MAG = true;
+                    }
                     float max = 0;
                     int maxPos = 0;
                     float maxTime = 0;
@@ -56,15 +60,11 @@ namespace HyperGraphExportedCurvesProcessor
                             isNegative = 1;
                             Console.WriteLine("E");
                         }*/
-                        if (StringUtils.expNotationToFloat(expText) > max && time > 0.1f && curveCount%4==0) // if MAG curve
+                        if (StringUtils.expNotationToFloat(expText) > max && time > 0.65f &&MAG) // if MAG curve
                         {
                             max = StringUtils.expNotationToFloat(expText);
                             maxPos = i;
                             maxTime = time;
-                        }
-                        if (curveCount % 4 == 0)
-                        {
-                            MAG = true;
                         }
 
                         i++;
@@ -90,12 +90,14 @@ namespace HyperGraphExportedCurvesProcessor
             }
 
             { // // write
-                string outPutFilePath = rootPath + outputFolder + outPutFile;
-                File.Copy(rootPath + templateFile, outPutFilePath);
+                string outputFilePath = rootPath + outputFolder + outputFile;
+                File.Copy(rootPath + templateFile, outputFilePath);
+
+                File.AppendAllLines(outputFilePath, new string[] { "" });
 
                 for (int i =0; i <curveCount; i+=4)
                 {
-                    File.AppendAllLines(outPutFilePath, new string[] { "RR" +(i/4+1)+"," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
+                    File.AppendAllLines(outputFilePath, new string[] { "RR" +(i/4+1)+"," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
                         timeAndMax[i + 1][1]+","+timeAndMax[i +2][1]+","+timeAndMax[i +3][1] });
 
                 }
