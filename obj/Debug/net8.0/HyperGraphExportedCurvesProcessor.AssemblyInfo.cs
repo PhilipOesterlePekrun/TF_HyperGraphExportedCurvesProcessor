@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HyperGraphExportedCurvesProcessor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a276bd81c54b187f985c5967c81b4a56ba8d082")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+723beebeb8a5f5226d4c8c95c402047d2136b155")]
 [assembly: System.Reflection.AssemblyProductAttribute("HyperGraphExportedCurvesProcessor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HyperGraphExportedCurvesProcessor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

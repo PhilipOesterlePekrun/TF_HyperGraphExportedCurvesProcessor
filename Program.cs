@@ -12,8 +12,8 @@ namespace HyperGraphExportedCurvesProcessor
 {
     public class Program
     {
-        static string inputFile = @"30.04_braking2_cattleGrids_velocity36_acce-4_start0_print.0001_rearOnly.csv";
-        static string outputFile = @"30.04_braking2_cattleGrids_velocity36_acce-4_start0_print.0001_rearOnly.csv";
+        static string inputFile = @"04.05_case6_in.csv";
+        static string outputFile = @"04.05_case6_out.csv";//30.04_braking2_cattleGrids_velocity36_acce-4_start0_print.0001_rearOnly.csv
 
         static string inputFolder = @"Input\";
         static string outputFolder = @"Output\";
@@ -33,8 +33,8 @@ namespace HyperGraphExportedCurvesProcessor
 
             // // read
             int curveCount = 0;
-            float[][] timeAndMax=new float[200][];
-            int[] maxPosArr = new int[200];
+            float[][] timeAndMax=new float[1000][];
+            int[] maxPosArr = new int[1000];
             {
                 int j = 0;
                 while (j < allText.Length)
@@ -60,7 +60,7 @@ namespace HyperGraphExportedCurvesProcessor
                             isNegative = 1;
                             Console.WriteLine("E");
                         }*/
-                        if (StringUtils.expNotationToFloat(expText) > max && time > 0.65f &&MAG) // if MAG curve
+                        if (StringUtils.expNotationToFloat(expText) > max && MAG && time >=0.55f) // if MAG curve
                         {
                             max = StringUtils.expNotationToFloat(expText);
                             maxPos = i;
@@ -95,11 +95,28 @@ namespace HyperGraphExportedCurvesProcessor
 
                 File.AppendAllLines(outputFilePath, new string[] { "" });
 
+                int FMax=20;
                 for (int i =0; i <curveCount; i+=4)
                 {
-                    File.AppendAllLines(outputFilePath, new string[] { "RR" +(i/4+1)+"," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
+                    if (i>=4*2* FMax) // rear
+                    {
+                        File.AppendAllLines(outputFilePath, new string[] { "RR" +((i-FMax*8)/4+1)+"," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
                         timeAndMax[i + 1][1]+","+timeAndMax[i +2][1]+","+timeAndMax[i +3][1] });
-
+                    }
+                    else
+                    {
+                        if (i%8<4) // left
+                        {
+                            File.AppendAllLines(outputFilePath, new string[] { "F" +(i/8+1)+"L," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
+                        timeAndMax[i + 1][1]+","+timeAndMax[i +2][1]+","+timeAndMax[i +3][1] });
+                        }
+                        else // right
+                        {
+                            File.AppendAllLines(outputFilePath, new string[] { "F" +(i/8+1)+"R," +timeAndMax[i][0]+","+timeAndMax[i][1]+","+
+                        timeAndMax[i + 1][1]+","+timeAndMax[i +2][1]+","+timeAndMax[i +3][1] });
+                        }
+                    }
+                    Console.WriteLine(i);
                 }
             }
         }

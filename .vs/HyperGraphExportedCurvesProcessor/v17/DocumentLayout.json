@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA57826A-2C4C-48C7-B3A9-8E051322E6D4}|HyperGraphExportedCurvesProcessor.csproj|c:\\users\\phili\\documents\\things\\tufast\\altair projects\\auxilliary\\hypergraphexportedcurvesprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA57826A-2C4C-48C7-B3A9-8E051322E6D4}|HyperGraphExportedCurvesProcessor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA57826A-2C4C-48C7-B3A9-8E051322E6D4}|HyperGraphExportedCurvesProcessor.csproj|c:\\users\\phili\\documents\\things\\tufast\\altair projects\\auxilliary\\hypergraphexportedcurvesprocessor\\statisticsutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA57826A-2C4C-48C7-B3A9-8E051322E6D4}|HyperGraphExportedCurvesProcessor.csproj|solutionrelative:statisticsutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA57826A-2C4C-48C7-B3A9-8E051322E6D4}|HyperGraphExportedCurvesProcessor.csproj|c:\\users\\phili\\documents\\things\\tufast\\altair projects\\auxilliary\\hypergraphexportedcurvesprocessor\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA57826A-2C4C-48C7-B3A9-8E051322E6D4}|HyperGraphExportedCurvesProcessor.csproj|solutionrelative:stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StringUtils.cs",
+              "DocumentMoniker": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\StringUtils.cs",
+              "RelativeDocumentMoniker": "StringUtils.cs",
+              "ToolTip": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\StringUtils.cs",
+              "RelativeToolTip": "StringUtils.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwFEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:49:50.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StatisticsUtils.cs",
+              "DocumentMoniker": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\StatisticsUtils.cs",
+              "RelativeDocumentMoniker": "StatisticsUtils.cs",
+              "ToolTip": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\StatisticsUtils.cs",
+              "RelativeToolTip": "StatisticsUtils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:49:36.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\phili\\Documents\\Things\\TUFast\\Altair Projects\\Auxilliary\\HyperGraphExportedCurvesProcessor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:49:01.295Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
